@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Link, useParams } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 export default function Navbar() {
@@ -24,11 +24,11 @@ export default function Navbar() {
         { categorias?.map((categoria, index) => (
           <li
             key={ index }>
-            <Link
+            <NavLink
               to={`/${ categoria }`}
-              className={`text-red-300 text-lg font-medium hover:text-red-200 py-1 px-5`}>
+              className={({ isActive }) => (`text-red-400 text-lg font-medium hover:text-red-200 py-1 px-5 ${isActive ? 'border rounded border-red-200 text-red-200' : ''}`)}>
                 { categoria }
-            </Link>
+            </NavLink>
           </li>
         ))
         }

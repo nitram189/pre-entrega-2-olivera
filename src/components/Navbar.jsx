@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { NavLink } from "react-router-dom";
+import CartWidget from "./CardWidget";
 
 
 export default function Navbar() {
@@ -32,6 +33,7 @@ export default function Navbar() {
           </li>
         ))
         }
+        <CartWidget />
       </ul>
     </nav>
   )

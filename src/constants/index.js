@@ -1,8 +1,18 @@
 export const footerLinks = [
+
+  {
+    title: "Fotografía",
+    links: [
+      { title: "TOMAS", url: "https://www.tomaspierriphotography.com/" },
+      { title: "TIMA", url: "https://www.pexels.com/es-es/@tima-miroshnichenko/" },
+      { title: "ANETE", url: "https://www.pexels.com/@anete-lusina/" },
+      { title: "LISA", url: "https://www.pexels.com/@fotios-photos/" },
+    ],
+  },
   {
     title: "La empresa",
     links: [
-      { title: "Nuestros locales", url: "/" },
+      { title: "Locales", url: "/" },
       { title: "Talleres", url: "/" },
       { title: "Clientes", url: "/" },
     ],

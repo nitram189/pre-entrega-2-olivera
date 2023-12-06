@@ -46,11 +46,11 @@ export default function Form({ titulo, texto }) {
 
         <p className="text-red-50">{texto}</p>
 
-        <div className='flex' data-aos="zoom-in">
+        <div className='md:flex' data-aos="zoom-in">
 
           <form            
             onSubmit={handleSubmit}
-            className="w-1/2 py-5">
+            className="md:w-1/2 py-5">
 
             <div className="space-y-4">
               <input
@@ -106,7 +106,7 @@ export default function Form({ titulo, texto }) {
             </div>
           </form>
 
-          <div className='w-1/2 p-5'>
+          <div className='md:w-1/2 p-5'>
 
             <div className='flex justify-center'>
               <img

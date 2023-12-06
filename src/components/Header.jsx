@@ -4,13 +4,15 @@ import Navbar from "./Navbar";
 
 export default function Header() {
   return (
-    <header className="p-5 flex flex-col items-center gap-5 border-b border-red-500 w-5/6 mx-auto">
-      <Link
-        to='/'>
-          <h1 className="text-5xl font-black text-red-400 text-center">tiendapp.</h1>
-      </Link>
+    <header className="p-5 absolute w-full z-10">
+      <div className="flex justify-between items-center gap-5 mx-auto max-w-[1440px]">
+        <Link
+          to='/'>
+            <h1 className="text-3xl font-black text-red-300 text-center">feizer.</h1>
+        </Link>
 
-      <Navbar/>
+        <Navbar/>
+      </div>
     </header>
   )
 }
